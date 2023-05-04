@@ -1,0 +1,125 @@
+@media screen and (max-width: 1200px)  {
+    .hero {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header {
+        display: inline-block;
+    }
+
+    .header__title {
+        font-size: 2em;
+        margin: 0.8em 0.8em 0 0.8em;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav__list {    
+        text-align: center;
+    }
+
+    .nav__item {
+        display: inline;
+        font-size: 1.2em;
+    }
+
+    .content-list {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .hero__title {
+        font-size: 2.5em;
+    }
+    
+    .hero__tagline {
+        font-size: 1.5em;
+        font-weight: 300;
+        text-shadow: 3px 3px 3px #0d0d0d;
+    }
+
+    .content-item > p {
+        font-size: 1em;
+    }
+    
+    .rating {
+        font-weight: 700;
+        font-size: 0.1em;
+    }       
+}
+
+@media screen and (max-width: 500px)  {
+    .hero {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header {
+        display: inline-block;
+    }
+
+    .header__title {
+        font-size: 1.2em;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    #drawer {
+        width: 250px;
+        position: absolute;
+        transform: translate(-250px, 0);
+        transition: transform 0.3s ease-in-out;
+        background-color: #eff0f3;
+        z-index: 1;
+    }
+    
+    #drawer.open {
+        transform: translate(0,0)
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav a {
+        display: block;
+        padding: 0.8em;
+    }
+
+    .nav a:hover {
+        color: #ff8e3c;
+    }
+
+    .nav__list {
+        margin: 0.2em;
+    }
+
+    .nav__item {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .content-list {
+        grid-template-columns: auto;
+    }
+
+    .content-item > h1 {
+        font-size: 1.5em;
+    }
+    
+    .nav__item > a:focus {
+        outline: 2px solid #ff8e3c;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        min-width: 1000px;
+        margin: 0 auto;
+    }
+}
